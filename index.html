@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Villain's Survey Form</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>Villain HQ Survey Form</h1>
+  <p class="description">Thank you for taking the time to help us dominate the globe</p>
+
+  <form>
+    <fieldset>
+    <label>Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name"/>
+    <label>Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your Email"/>
+    <label>Years of villainy (optional)</label>
+      <input id="age" name="age" type="number" placeholder="Years"/>
+    <label>Which option best describes your current role?</label>
+      <select>
+        <option>Select current role</option>
+        <option>Supervillain</option>
+        <option>Villain</option>
+        <option>Henchman</option>
+        <option>Minion</option>
+        <option>Underling</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+    <p class="recommend-query">Would you recommend freeCodeCamp to a friend?</p>
+    <label><input id="definitely" name="recommend" type="radio" class="inline" checked /> Definitely</label>
+    <label><input id="maybe" name="recommend" type="radio" class="inline"/> Maybe</label>
+    <label><input id="not-sure" name="recommend" type="radio" class="inline"/> Not sure</label>
+    </fieldset>
+  </form>
+</body>
+</html>
