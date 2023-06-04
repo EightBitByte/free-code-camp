@@ -15,23 +15,49 @@
       <input id="name" name="name" type="text" placeholder="Enter your name"/>
     <label>Email</label>
       <input id="email" name="email" type="email" placeholder="Enter your Email"/>
-    <label>Years of villainy (optional)</label>
+    <label>Years of villainy (<a class="optional">optional</a>)</label>
       <input id="age" name="age" type="number" placeholder="Years"/>
     <label>Which option best describes your current role?</label>
       <select>
-        <option>Select current role</option>
-        <option>Supervillain</option>
-        <option>Villain</option>
-        <option>Henchman</option>
-        <option>Minion</option>
-        <option>Underling</option>
-        <option>Prefer not to say</option>
-        <option>Other</option>
+        <option value="">Select current role</option>
+        <option value="1">Supervillain</option>
+        <option value="2">Villain</option>
+        <option value="3">Henchman</option>
+        <option value="4">Minion</option>
+        <option value="5">Underling</option>
+        <option value="6">Prefer not to say</option>
+        <option value="7">Other</option>
       </select>
-    <p class="recommend-query">Would you recommend freeCodeCamp to a friend?</p>
+    <p class="recommend-query">Would you recommend villainy to a friend?</p>
     <label><input id="definitely" name="recommend" type="radio" class="inline" checked /> Definitely</label>
     <label><input id="maybe" name="recommend" type="radio" class="inline"/> Maybe</label>
     <label><input id="not-sure" name="recommend" type="radio" class="inline"/> Not sure</label>
+    </fieldset>
+    <fieldset>
+      <label>What is your favorite part of villainy?</label>
+      <select>
+        <option value="">Select an option</option>
+        <option value="1">Power</option>
+        <option value="2">Infamy</option>
+        <option value="3">Wealth</option>
+        <option value="4">Comfort</option>
+      </select>
+      <p class="recommend-query">What would you like to see improved? (<a class="optional">Check all that apply</a>)</p>
+      <label><input id="minion" name="improvement" type="checkbox" class="inline"/> Minion Competency</label>
+      <label><input id="law" name="improvement" type="checkbox" class="inline"/> Law Leniency</label>
+      <label><input id="vault" name="improvement" type="checkbox" class="inline"/> Vault Security</label>
+      <label><input id="begin" name="improvement" type="checkbox" class="inline"/> Resources for Beginning Villains</label>
+      <label><input id="drill" name="improvement" type="checkbox" class="inline"/> Better Drilling Equipment</label>
+      <label><input id="costume" name="improvement" type="checkbox" class="inline"/> More Costume Choice</label>
+      <label><input id="money" name="improvement" type="checkbox" class="inline"/> Bigger Money Bags</label>
+      <label><input id="conference" name="improvement" type="checkbox" class="inline"/> More Villain Conferences</label>
+      <label><input id="henchmen" name="improvement" type="checkbox" class="inline"/> Henchmen Hiring Events</label>
+      <label><input id="mailing" name="improvement" type="checkbox" class="inline"/> Villain Tip Mailing List</label>
+    </fieldset>
+    <fieldset>
+      <label class="comment-query">Any comments or suggestions?</label>
+      <textarea placeholder="Enter your comment here..."/></textarea>
+      <button id="submit" type="sumbit">Submit</button>
     </fieldset>
   </form>
 </body>
