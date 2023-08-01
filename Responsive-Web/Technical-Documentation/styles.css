@@ -1,0 +1,113 @@
+html {
+    background-color: #121212;
+    font-family: 'Work Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    border-right: solid 1px;
+    border-color: #282828;
+}
+
+header {
+    text-align: center;
+}
+
+#navbar header {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: thin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.main-section header {
+    text-align: left;
+    margin: 0px;
+    font-size: 24px;
+}
+
+.main-section p {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+a:link {
+    color: #ba9ffb;
+}
+
+a:visited {
+    color: #7a5af5;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    margin-right: 2px;
+}
+
+.main-icon {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    width: 32px;
+    margin-right: 3px;
+}
+
+.main-section h2 {
+    position: relative;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: thin;
+}
+
+.main-section ul {
+    margin-top: -10px;
+}
+
+.main-section li {
+    font-weight: 300;
+    font-size: 14px;
+    font-style: thin;
+    line-height: 20px;
+}
