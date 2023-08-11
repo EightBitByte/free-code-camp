@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product Landing</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dai+Banna+SIL|Roboto+Slab:100,400,900">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.8.2/css/all.css">
+        <link rel="icon" type="image/x-icon" href="https://static.thenounproject.com/png/362023-200.png"/>
+    </head>
+    <header id="header">
+        <div id="logo-div">
+            <img 
+                src="https://static.thenounproject.com/png/362023-200.png" 
+                id="header-img" 
+                alt="Third Eye Cards Logo"
+            />
+            <h1 id="logo-text">Third Eye Cards</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="hero">
+            <h1>Durable, stylish playing cards</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" placeholder="Enter your email" id="email" name="email" required>
+                <input type="submit" value="GET STARTED" id="submit" class="button">
+            </form>
+        </div>
+        <div class="container">
+            <div class="features" id="features">
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-angle-double-right"></i></div>
+                        <div class="description">
+                            <h2>Expedited Shipping and Manufacturing</h2>
+                            <p>We get you the cards you need, when you need them. 
+                            Our distributed shipping company allows us to 
+                            speedily provide you the handcrafted cards with 
+                            next-day shipping.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-magic"></i></div>
+                        <div class="description">
+                            <h2>Perfect for Magic</h2>
+                            <p>We have an in-house magician that personally tests 
+                            every single deck of cards to ensure that they are 
+                            smooth and flexible enough for all of 
+                            your magic needs.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon"><i class="fas fa-recycle"></i></div>
+                        <div class="description">
+                            <h2>Made of 100% Recycled Materials</h2>
+                            <p>Our cards are made entirely of locally-sourced, 
+                            free-range, grass-fed paper, plastic, cardboard, and 
+                            cotton. You can rest assured knowing your purchase 
+                            helps the environment.</p>
+                        </div>
+            </div>
+            <div id="demo">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/G6U9bdu1ET4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" 
+                    id="video"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="pricing">
+                <div class="pricing-option">
+                    <div class="pricing-title"><p>voodoo tier</p></div>
+                    <div class="pricing-content">
+                        <h2>$90</h2>
+                        <ul>
+                            <li>20 decks of cards</li>
+                            <li>Premium plastic</li>
+                            <li>3-5 day shipping</li>
+                            <li>Customer support</li>
+                            <li><input type="button" class="button" id="option1" value="select"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing-option">
+                    <div class="pricing-title"><p>sorcery tier</p></div>
+                    <div class="pricing-content">
+                        <h2>$100</h2>
+                        <ul>
+                            <li>25 decks of cards</li>
+                            <li>Effervescent plastic</li>
+                            <li>Next day shipping</li>
+                            <li>Refund & Customer Support</li>
+                            <li><input type="button" class="button" id="option2" value="select"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pricing-option">
+                    <div class="pricing-title"><p>black magic tier</p></div>
+                    <div class="pricing-content">
+                        <h2>$200</h2>
+                        <ul>
+                            <li>50 decks of cards</li>
+                            <li>Glossy plastic</li>
+                            <li>Next day shipping</li>
+                            <li>Refund & Customer Support</li>
+                            <li><input type="button" class="button" id="option3" value="select"/></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul>
+            <span>Copyright 2023, Third Eye Cards</span>
+        </footer>
+    </body>
+</html>
