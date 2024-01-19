@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    padding: 0.2rem;
+}
+
+.title-head h1:first-child {
+    margin-bottom: -0.5rem;
+}
+
+.flipped {
+    display: inline-block;
+    transform: scale(1, -1);
+    -webkit-transform: scale(-1, -1);
+    filter: opacity(0.65);
+}
+
+p {
+    font-size: 4rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.center input, .center button {
+    padding: 0.3rem 0.8rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+
+}
+
+.center input {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
