@@ -6,10 +6,13 @@ const explanation = document.getElementById("result-expl");
 const correctText = "Congrats! It is a palindrome."
 const incorrectText = "It is not a palindrome. Boo."
 
+const alphaNumReg = /[\d\s,.:]/g;
+
 function checkPalindrome() {
-    if (textInput.value.length > 0) {
-        displayResult(isPalindrome(textInput.value.toLowerCase()));
-    }
+    if (textInput.value.length > 0)
+        displayResult(isPalindrome(textInput.value.replaceAll(alphaNumReg, '').toLowerCase()));
+    else 
+        alert("Please input a value");
 }
 
 function isPalindrome(text) {
