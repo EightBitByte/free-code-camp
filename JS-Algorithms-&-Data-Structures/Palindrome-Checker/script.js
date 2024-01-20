@@ -9,12 +9,12 @@ const incorrectText = "It is not a palindrome. Boo."
 const alphaNumReg = /[^a-zA-Z0-9]/g;
 
 function checkPalindrome() {
-    if (textInput.value.length > 0) {
-        console.log(textInput.value.replaceAll(alphaNumReg, ''));
-        displayResult(isPalindrome(textInput.value.replaceAll(alphaNumReg, '').toLowerCase()));
-    }
+    const cleanText = textInput.value.replaceAll(alphaNumReg, '');
+
+    if (cleanText.length > 0) 
+        displayResult(isPalindrome(cleanText.toLowerCase()));
     else 
-        alert("Please input a value");
+        alert("Please input an alphanumeric string");
 }
 
 function isPalindrome(text) {
@@ -34,8 +34,7 @@ function displayResult(isCorrect) {
         explanation.innerHTML = `
         <h2>WHAT DOES THIS MEAN?</h2>
         <h3>THE STRING OF TEXT YOU ENTERED IS SPELLED THE SAME BACKWARDS AND FORWARDS.</h3>`
-        const wordSpan = document.getElementById("word");
-        wordSpan.innerText = textInput.value;
+        document.getElementById("word").innerText = textInput.value;
     } else {
         result.classList.remove('congrats')
         result.classList.add('boo')
@@ -44,8 +43,7 @@ function displayResult(isCorrect) {
         explanation.innerHTML = `
         <h2>WHAT DOES THIS MEAN?</h2>
         <h3>THE STRING OF TEXT YOU ENTERED IS <span class="incorrect">NOT</span> SPELLED THE SAME BACKWARDS AND FORWARDS.</h3>` 
-        const wordSpan = document.getElementById("word");
-        wordSpan.innerText = textInput.value;
+        document.getElementById("word").innerText = textInput.value;
     }
 }
 
