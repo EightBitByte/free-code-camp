@@ -15,6 +15,18 @@ body {
     padding: 0.2rem;
 }
 
+.title-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    width: 5rem;
+}
+
 .title-head h1:first-child {
     margin-bottom: -0.5rem;
 }
@@ -24,6 +36,10 @@ body {
     transform: scale(1, -1);
     -webkit-transform: scale(-1, -1);
     filter: opacity(0.65);
+}
+
+#check-text {
+    margin-top: 8vh;
 }
 
 p {
@@ -40,10 +56,49 @@ p {
     background-color: white;
     border: 1px solid black;
     border-radius: 1rem;
+}
 
+.congrats {
+    font-size: 4rem;
+    color: lime;
+}
+
+.boo {
+    font-size: 4rem;
+    color: red;
+}
+
+#result {
+    margin-top: 1vh;
+}
+
+#result-expl {
+    margin-top: 2vh;
+    width: 45vw;
+    text-wrap: wrap;
 }
 
 .center input {
     margin-left: 2rem;
     margin-right: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0.2rem;
+    right: 0.2rem;
+    text-transform: lowercase;
+    z-index: 1;
+}
+
+.incorrect {
+    color: red;
 }
