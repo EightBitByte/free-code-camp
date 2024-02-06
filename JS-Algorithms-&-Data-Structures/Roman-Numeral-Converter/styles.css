@@ -1,0 +1,55 @@
+:root {
+    --background0: #2C2C2C;
+    --background1: #363636;
+    --background2: #5A5A5A;
+    --text: #FFFFFF;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input, button, h1 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#upper, #output {
+    display: flex;
+    align-items: center;
+}
+
+#upper {
+    padding: 3vh 5vw;
+    flex-direction: column;
+}
+
+#upper h1 {
+    width: 100%;
+    padding: 0;
+    margin: 1rem;
+}
+
+#number {
+    width: 100%;
+    height: 10vh;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#convert-btn {
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+}
+
+#output {
+    margin: 3vh 5vw;
+    width: 90vw;
+    height: 10vh;
+    border: 1px solid black;
+    justify-content: center;
+    font-size: 2rem;
+}
