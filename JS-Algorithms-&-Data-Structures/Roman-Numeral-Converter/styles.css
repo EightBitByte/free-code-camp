@@ -9,10 +9,22 @@ html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color-scheme: dark;
 }
 
-input, button, h1 {
+body {
+    background-color: var(--background0);
+}
+
+input, button, h1, #output {
     font-family: "Josefin Sans", sans-serif;
+    color: var(--text);
+}
+
+input, button, #output {
+    background-color: var(--background1);
+    border: 1px solid var(--background2);
+    border-radius: 15px;
 }
 
 #upper, #output {
@@ -33,10 +45,13 @@ input, button, h1 {
 
 #number {
     width: 100%;
-    height: 10vh;
     font-size: 6rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+#number, #output {
+    height: 20vh;
 }
 
 #convert-btn {
@@ -46,10 +61,22 @@ input, button, h1 {
 }
 
 #output {
-    margin: 3vh 5vw;
+    margin: 0 5vw;
     width: 90vw;
-    height: 10vh;
-    border: 1px solid black;
     justify-content: center;
     font-size: 2rem;
+}
+
+.placeholder {
+    color: var(--background2) !important;
+}
+
+#back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+a:visited, a:link {
+    color: var(--text);
 }

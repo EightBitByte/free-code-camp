@@ -19,7 +19,7 @@ const romanMap = [
 ]
 
 const convert = (num) => {
-    romanString = "";
+    let romanString = "";
 
     for (let i = 0; i < romanMap.length; ++i) {
         for (; num >= romanMap[i][1]; num-= romanMap[i][1])
